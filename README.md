@@ -1,12 +1,48 @@
-# React + Vite
+# CoWork3 Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend application for coworking space management.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Build for Production
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+npm run preview
+```
+
+## Deploy to Netlify
+
+### Option 1: Automatic Deployment
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `dist`
+4. Deploy automatically on push
+
+### Option 2: Manual Deployment
+1. Run `npm run build`
+2. Upload the `dist` folder to Netlify
+
+### Environment Variables
+No environment variables required for this project.
+
+## Features
+- User management
+- Attendance tracking
+- Course management
+- Dashboard analytics
+- RTL support (Persian/Arabic)
+- Dark/Light theme
+- Responsive design
+
+## Tech Stack
+- React 19
+- Vite
+- Material-UI
+- Emotion
+- LocalStorage for data persistence
